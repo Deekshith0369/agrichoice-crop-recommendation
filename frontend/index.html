@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <a class="brand" href="/" aria-label="AgriChoice home">
+                <span class="brand-mark" aria-hidden="true">🌱</span>
+                <span>AgriChoice</span>
+            </a>
+            <div class="topbar-actions">
+                <button type="button" id="historyBtn" class="history-btn" aria-haspopup="dialog">
+                    <span aria-hidden="true">◷</span>
+                    <span id="historyLabel">History</span>
+                    <b id="historyCount">0</b>
+                </button>
+                <div class="lang-bar">
+                    <label for="langSelect">🌐 <span id="languageLabel">Language</span></label>
+                    <select id="langSelect" aria-label="Select language">
+                        <option value="en" selected>English</option>
+                        <option value="kn">ಕನ್ನಡ</option>
+                        <option value="hi">हिन्दी</option>
+                        <option value="ta">தமிழ்</option>
+                        <option value="te">తెలుగు</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-grid">
+            <section class="intro" aria-labelledby="appTitle">
+                <span class="eyebrow" id="eyebrow">SMART FARMING ASSISTANT</span>
+                <h1 id="appTitle">Crop Recommendation System</h1>
+                <p id="introText">Share your farm conditions and get the crops most likely to thrive.</p>
+                <div class="feature-row" aria-label="System features">
+                    <span><b>✓</b> <span id="featureOne">Top 3 matches</span></span>
+                    <span><b>✓</b> <span id="featureTwo">Local recommendations</span></span>
+                    <span><b>✓</b> <span id="featureThree">Farming guidance</span></span>
+                </div>
+            </section>
+
+            <section class="recommendation-panel" aria-label="Crop recommendation form">
+                <div class="form-heading">
+                    <div>
+                        <span class="step">01</span>
+                        <h2 id="formTitle">Tell us about your farm</h2>
+                    </div>
+                    <span class="status-dot"><i></i> <span id="statusText">Ready</span></span>
+                </div>
+
+                <form id="cropForm">
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="soil_type" id="soilLabel">Soil type</label>
+                            <select id="soil_type" required>
+                                <option value="" disabled selected id="optSoilDefault">Select Soil Type</option>
+                                <option value="alluvial" id="optSoilAlluvial">Alluvial Soil</option>
+                                <option value="black" id="optSoilBlack">Black Soil</option>
+                                <option value="red" id="optSoilRed">Red / Laterite Soil</option>
+                                <option value="loamy" id="optSoilLoamy">Loamy Soil</option>
+                                <option value="clay" id="optSoilClay">Clay Soil</option>
+                                <option value="sandy" id="optSoilSandy">Sandy Soil</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="season" id="seasonLabel">Growing season</label>
+                            <select id="season" required>
+                                <option value="" disabled selected id="optSeasonDefault">Select Season</option>
+                                <option value="kharif" id="optSeasonKharif">Kharif (Monsoon)</option>
+                                <option value="rabi" id="optSeasonRabi">Rabi (Winter)</option>
+                                <option value="zaid" id="optSeasonZaid">Zaid (Summer)</option>
+                                <option value="annual" id="optSeasonAnnual">Annual (All Year)</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="rainfall" id="rainLabel">Annual rainfall</label>
+                            <div class="input-with-unit">
+                                <input type="number" min="0" max="5000" step="any" id="rainfall" placeholder="e.g. 120" required>
+                                <span>mm</span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="water_availability" id="waterLabel">Water availability</label>
+                            <select id="water_availability" required>
+                                <option value="" disabled selected id="optWaterDefault">Select availability</option>
+                                <option value="high" id="optWaterHigh">High (Abundant Irrigation / Rain)</option>
+                                <option value="medium" id="optWaterMedium">Medium (Moderate Irrigation)</option>
+                                <option value="low" id="optWaterLow">Low (Rainfed / Dry)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" id="resetBtn" class="secondary-btn">Reset</button>
+                        <button type="submit" id="submitBtn">
+                            <span id="submitText">Recommend Crop</span>
+                            <span aria-hidden="true">→</span>
+                        </button>
+                    </div>
+                </form>
+
+                <div id="result" class="result hidden" aria-live="polite"></div>
+            </section>
+        </main>
+
+        <footer>
+            <span id="footerText">AgriChoice • Smart crop planning</span>
+        </footer>
+
+        <div id="historyOverlay" class="history-overlay" hidden>
+            <section class="history-dialog" role="dialog" aria-modal="true" aria-labelledby="historyTitle">
+                <div class="history-header">
+                    <div>
+                        <span class="eyebrow" id="historyEyebrow">SAVED RESULTS</span>
+                        <h2 id="historyTitle">Recommendation History</h2>
+                    </div>
+                    <button type="button" id="closeHistoryBtn" class="icon-btn" aria-label="Close history">×</button>
+                </div>
+                <div id="historyList" class="history-list"></div>
+                <button type="button" id="clearHistoryBtn" class="clear-history-btn">Clear all history</button>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
