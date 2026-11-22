@@ -1884,7 +1884,7 @@ CROPS = [
         "duration": "Perennial (3-4 yrs to bear)",
         "temp": "18°C - 30°C",
         "ph_range": "5.5 - 6.5",
-        "image_url": "http://www.agritech.tnau.ac.in/horticulture/images/plantation/coffee/coffee14.jpg",
+        "image_url": "https://cdn.britannica.com/08/147408-050-3C8C9D64/arabica-coffee-cherries.jpg",
         "source_url": "https://en.wikipedia.org/wiki/Coffee_production_in_India",
         "overview": {
             "en": "Coffee (Arabica & Robusta) is a shade-grown Western Ghats plantation crop thriving in rich forest-loam soils with distinct blossom and backing showers.",
