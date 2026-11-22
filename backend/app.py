@@ -1248,7 +1248,7 @@ CROPS = [
         "source_url": "https://en.wikipedia.org/wiki/Pigeon_pea",
         "overview": {
             "en": "Pigeon Pea (Tur / Arhar) is a deep-rooted Kharif pulse crop that fixes atmospheric nitrogen and withstands mid-season dry spells.",
-            "kn": "ತೊಗರಿ (Cajanus cajan) ಆಳವಾದ ಬೇರು ಹೊಂದಿರುವ ಪ್ರಮುಖ ಖಾರಿಫ್ ಬೇಳೆಕಾಳು ಬೆಳೆಯಾಗಿದ್ದು, ಬರವನ್ನು ತట్టుಿಕೊಳ್ಳುತ್ತದೆ.",
+           "kn": "ತೊಗರಿ (Cajanus cajan) ಆಳವಾದ ಬೇರು ಹೊಂದಿರುವ ಪ್ರಮುಖ ಮುಂಗಾರು ದ್ವಿದಳ ಧಾನ್ಯವಾಗಿದ್ದು, ಬರವನ್ನು ತಡೆದುಕೊಳ್ಳುತ್ತದೆ.",
             "hi": "अरहर / तुअर (Cajanus cajan) गहरी जड़ों वाली खरीफ दलहन फसल है, जो सूखे को सहन करती है और मिट्टी की उर्वरता बढ़ाती है।",
             "ta": "துவரை (Cajanus cajan) ஆழமான வேர்களைக் கொண்ட வறட்சி தாங்கும் முக்கிய கரீஃப் பயறுப் பயிராகும்.",
             "te": "కంది (Cajanus cajan) లోతైన వేర్లు కలిగి, కరువును తట్టుకునే ప్రధాన ఖరీఫ్ పప్పుధాన్య పంట.",
@@ -1884,8 +1884,7 @@ CROPS = [
         "duration": "Perennial (3-4 yrs to bear)",
         "temp": "18°C - 30°C",
         "ph_range": "5.5 - 6.5",
-        "image_url": "https://cdn.britannica.com/08/147408-050-3C8C9D64/arabica-coffee-cherries.jpg",
-        "source_url": "https://en.wikipedia.org/wiki/Coffee_production_in_India",
+        "image_url": "https://cdn.britannica.com/08/147408-050-3C8C9D64/arabica-coffee-cherries.jpg",        "source_url": "https://en.wikipedia.org/wiki/Coffee_production_in_India",
         "overview": {
             "en": "Coffee (Arabica & Robusta) is a shade-grown Western Ghats plantation crop thriving in rich forest-loam soils with distinct blossom and backing showers.",
             "kn": "ಕಾಫಿ (ಅರೇಬಿಕಾ ಮತ್ತು ರೋಬಸ್ಟಾ) ಪಶ್ಚಿಮ ಘಟ್ಟಗಳ ನೆರಳಿನಲ್ಲಿ ಫಲವತ್ತಾದ ಗೋಡು ಮಣ್ಣಿನಲ್ಲಿ ಬೆಳೆಯುವ ಪ್ರಮುಖ ತೋಟಗಾರಿಕೆ ಬೆಳೆಯಾಗಿದೆ.",
